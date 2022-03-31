@@ -1,0 +1,133 @@
+/* Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+@font-face {
+  font-family: 'mr_DopestyleG';
+  src: url('fonts/mr_DopestyleG.eot');
+  src: url('fonts/mr_DopestyleG.eot?#iefix') format('embedded-opentype'),
+       url('fonts/mr_DopestyleG.svg#mr_DopestyleG') format('svg'),
+       url('fonts/mr_DopestyleG.ttf') format('truetype'),
+       url('fonts/mr_DopestyleG.woff') format('woff'),
+       url('fonts/mr_DopestyleG.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*----------------------------Конец обнуления--------------------------------------------------*/
+
+div.wrapper {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+height: 100%;
+background-color: #1E621E;
+}
+
+header {
+min-height: 202px;
+max-height: 202px;
+max-width: 1200px;
+min-width: 100%;
+
+}
+
+.sandwich_menu {
+width: 83px;
+height: 31px;
+margin-top: 6%;
+margin-left: 78%;
+}
+
+.line_sandwich {
+width: 83px;
+height: 10px;
+border-top: 3px white solid;
+}
+
+.sandwich_menu:last-child {
+border-bottom: 3px white solid;
+}
+
+img.front_image {
+border-radius: 215px;
+background-color: #1E621E;
+width: 430px;
+min-height: 430px;
+border: 4px white solid;
+padding: 15px;
+}
+
+.main_title {
+font-family: 'mr_DopestyleG';
+font-size: 128px;
+padding-top: 89px;
+height: calc 129+89px;
+width: 100%;
+background-color: #1E621E;
+color:  white;
+text-align: center;
+}
+
+h1 {
+font-family: 'mr_DopestyleG';
+font-size: 85px;
+text-align: center;
+width: 100%;
+color: white;
+background-color: #1E621E;
+padding: 70px 6%  0px;
+
+}
+
+.text1, .text2 {
+font-family: "Times New Roman";
+font-size: 40px;
+font-style: italic;
+text-align: center;
+color: white;
+background-color: #1E621E;
+width: 100%;
+padding: 70px 6% 0px;
+}
+
+.text1 {
+font-size: 48px;
+padding-top: 166px;
+}
