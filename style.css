@@ -58,6 +58,7 @@ align-items: center;
 width: 100%;
 height: 100%;
 background-color: #1E621E;
+overflow: auto;
 }
 
 header {
