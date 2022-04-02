@@ -97,7 +97,7 @@ padding: 15px;
 
 .main_title {
 font-family: 'mr_DopestyleG';
-font-size: 18vw;
+font-size: 10vw;
 padding-top: 89px;
 height-max: calc 129+89px;
 width: 100%;
@@ -139,10 +139,9 @@ text-align: center;
 video.footage {
 width: 60%;
 max-height: 900px;
-padding: 9vm;
+padding: 20px;
 border: 3px white solid;
 object-fit: contain;
-border-radius: 100px;
 }
 
 .bottom_photo {
