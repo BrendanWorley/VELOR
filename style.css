@@ -108,13 +108,13 @@ text-align: center;
 
 h1 {
 font-family: 'mr_DopestyleG';
-font-size: 7vw;/*ранее 85px*/
+font-size: 9vw;/*ранее 85px*/
 text-align: center;
 width: 100%;
 overflow: visible;
 color: white;
 background-color: #1E621E;
-padding: 70px 6%  25px;
+padding: 10vw 6%  5vw;
 
 }
 
@@ -130,8 +130,9 @@ padding: 70px 6% 70px;
 }
 
 .text1 {
-font-size: 48px;
+font-size: 12vw;
 padding-top: 166px;
+text-align: center;
 }
 
 video.footage {
