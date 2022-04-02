@@ -108,7 +108,7 @@ text-align: center;
 
 h1 {
 font-family: 'mr_DopestyleG';
-font-size: 85px;
+font-size: 5vm;/*ранее 85px*/
 text-align: center;
 width: 100%;
 overflow: visible;
