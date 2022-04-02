@@ -97,7 +97,7 @@ padding: 15px;
 
 .main_title {
 font-family: 'mr_DopestyleG';
-font-size: 10vw; /*128px;*/
+font-size: 20vw; /*128px;*/
 padding-top: 89px;
 height: calc 129+89px;
 width: 100%;
@@ -114,7 +114,7 @@ width: 100%;
 overflow: visible;
 color: white;
 background-color: #1E621E;
-padding: 4% 6% 4%;
+padding: 3% 6% 3% 6%;
 
 }
 
