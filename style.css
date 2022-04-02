@@ -17,7 +17,7 @@ nav,footer,header,aside{display: block;}
 html,body{
 	height: 100%;
 	width: 100%;
-	font-size: 4vm;
+	font-size: 4vw;
 	line-height: 1;
 	font-size: 14px;
 	-ms-text-size-adjust: 100%;
@@ -108,7 +108,7 @@ text-align: center;
 
 h1 {
 font-family: 'mr_DopestyleG';
-font-size: 5vm;/*ранее 85px*/
+font-size: 5vw;/*ранее 85px*/
 text-align: center;
 width: 100%;
 overflow: visible;
@@ -120,7 +120,7 @@ padding: 70px 6%  25px;
 
 .text1, .text2, .text3, .text4, .text5, .text6, .text7, .text8 {
 font-family: "Times New Roman";
-font-size: 4vm;
+font-size: 4vw;
 font-style: italic;
 text-align: justify;
 color: white;
