@@ -1,6 +1,6 @@
 /*-------------------------------------ПОДВЯЗАННЫЕ ШРИФТЫ--------------------------------------------*/
 
-@@font-face {
+@font-face {
   font-family: 'Copyist';
   src: url('Copyist.svg#Copyist') format('svg'),
        url('Copyist.ttf') format('truetype'),
