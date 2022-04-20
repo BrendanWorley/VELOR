@@ -134,13 +134,12 @@ max-width: 767px;
 .header__bottomstrip, .header__topstrip {
 	height: 21vw;
 	min-height: 21vw;
-
+display: none;
 }
 
 .header__smallframebottom, .header__smallframetop {
 	height: 21vw;
 	min-height: 21vw;
-        display: none;
 }
 
 .header__smallframetop {
