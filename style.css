@@ -1,0 +1,411 @@
+/*-------------------------------------ПОДВЯЗАННЫЕ ШРИФТЫ--------------------------------------------*/
+
+@font-face {
+  font-family: 'Copyist';
+  src: url('Copyist.svg#Copyist') format('svg'),
+       url('Copyist.ttf') format('truetype'),
+       url('Copyist.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'copyist-thin1';
+  src: url('copyist-thin1.eot');
+  src: url('copyist-thin1.eot?#iefix') format('embedded-opentype'),
+       url('copyist-thin1.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Andantinoscript';
+  src: url('fonts/Andantinoscript.svg#Andantinoscript') format('svg'),
+       url('fonts/Andantinoscript.ttf') format('truetype'),
+       url('fonts/Andantinoscript.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'andantino-script_[allfont.ru]';
+  src: url('andantino-script_[allfont.ru].eot');
+  src: url('andantino-script_[allfont.ru].eot?#iefix') format('embedded-opentype'),
+       url('andantino-script_[allfont.ru].woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*----------------------------КОНЕЦ ПОДВЯЗАННЫЕ ШРИФТЫ --------------------------------------*/
+
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------конец обнуления------------*/
+
+
+.wrapper {
+background-color: #3E563E;
+max-width: 1200px;
+max-height: 5000px;
+width: 100vw;
+min-height: 100vh;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 5vh;
+position: relative;
+z-index: 8;
+}
+
+.header {
+max-width: 1200px;
+width: 100%;
+height: 100vh;
+margin: 0 auto;
+position: fixed;
+top: 0px;
+z-index: 9;
+}
+
+
+
+.header__container {
+max-width: 1200px;
+width: 100%;
+height:100%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+position: relative;
+}
+
+.header__burgericon {
+width: 5vw;
+max-width: 89px;
+height: 4vw;
+max-height: 79px;
+position: absolute;
+/*старые значения top: 46vh;
+right: 1vw;*/
+bottom: 2.5vw;
+right: 50vw+2.5vw;
+z-index: 12;
+}
+
+.header__burgericon_jpg {
+width: 100%;
+height: 100%;
+}
+
+.header__topcorner, .header__bottomcorner {
+/* ПОКА УБРАЛ ХОЧУ ПОСМОТРЕТЬ -----max-width: 1200px;-----------*/
+width: 100%;
+                     /* БЫЛО РАНЬШЕ ДО ПРОБЫ height: 278px;----------*/
+max-height: 23vw;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin: 0, auto;
+}
+
+.topcorner {
+padding: 2vw 2vw 0 2vw;
+}
+
+.bottomcorner {
+padding-bottom: 2vw;
+padding-left: 2vw;
+padding-right: 2vw;
+}
+
+.corner {
+width: 21vw;
+max-width: 250px;
+height: 21vw;
+max-height: 250px;
+z-index: 11;
+}
+
+.header__1cornerimg, .header__2cornerimg, .header__3cornerimg, .header__4cornerimg {
+max-width: 250px;
+max-height: 250px;
+width: 100%;
+height: 100%;
+
+}
+
+.header__topstrip {
+position: absolute;
+top: 0;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 100%;
+height: 8vw;
+z-index: 10;
+}
+
+.header__topstripleft {
+width: 25vw;
+height: 100%;
+background-color: #3E563E;
+border-radius: 0% 0% 100% 0%;
+}
+
+ .header__topstripright {
+width: 25vw;
+height: 100%;
+background-color: #3E563E;
+border-radius: 0% 0% 0% 100%;
+}
+
+.header__container {
+	position: relative;
+}
+.header__bottomstrip {
+position: absolute;
+bottom: 0;
+width: 100%;
+height: 8vw;
+background-color: #3E563E;
+z-index: 10;
+}
+
+.header__smallframebottom {
+position: fixed;
+bottom: 0;
+width: 100vw;
+height: 8vw;
+text-align: center;
+background-color: #3E563E;
+z-index: 11;
+}
+
+.header__smallframetop {
+position: fixed;
+top: 0;
+width: 100vw;
+height: 8vw;
+text-align: center;
+background-color: #3E563E;
+z-index: 11;
+}
+
+.header__smallframebottomimg, .header__smallframetopimg {
+width: 79vw;
+height: 15vw;
+}
+
+
+
+.frontportrait {
+width: 278px;
+height: 362px;
+position: relative;
+}
+
+.frontportrait__frame {
+width: 100%;
+height: 100%;
+margin: 0 auto;
+}
+
+.frontportrait__frame_png {
+width: 100%;
+height: 100%;
+}
+
+.frontportrait__photo_jpg {
+width: 206px;
+height: 203px;
+border-radius: 50%;
+border: 4px white solid;
+position: absolute;
+top: 80px;
+left: 35px;
+}
+
+.title {
+font-family: "Andantinoscript";
+font-size: calc(100px + 20 * (100vw / 1200));
+color: white;
+width: 100%;
+margin-top: 7px;
+text-align: center;
+}
+
+.hesgorgeous__video {
+	display: flex;
+	flex-direction: column;
+	width: 24vw;
+	height: 38vw;
+}
+
+.hesgorgeous__video__smallframetop, .hesgorgeous__video__smallframebottom {
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
+
+.hesgorgeous__video__smallframetopimg, .hesgorgeous__video__smallframebottomimg {
+width: 24vw;
+max-width: 24vw;
+}
+
+.hesgorgeous__video__clip {
+	width: 15vw;
+	height: 23vw;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.hesgorgeous__video__clip_mp4 {
+	height: 23vw;
+}
+
+
+
+/*-----------------------------MEDIA ЗАПРОСЫ ----------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+
+/*----------ИЗМЕНЕНИЕ ПАРАМЕТРОВ СТРАНИЦЫ И ЗАГОЛОВКА ПРИ ЭКРАНЕ ДО 768px-------------*/
+@media (max-width: 767px) {
+.wrapper {
+	max-width: 767px;
+}
+.header  {
+max-width: 767px;
+}
+.header__container {
+	max-width: 767px;
+}
+.header__topstrip {
+	background-color: #3E563E;
+}
+.header__burgericon {
+	display: none;
+}
+.corner {
+	display: none;
+}
+.header__topstripleft, .header__topstripright {
+	display: none;
+}
+.frontportrait {
+	margin-top: 15vw;
+}
+.header__bottomstrip, .header__topstrip {
+	height: 21vw;
+	min-height: 21vw;
+}
+
+.header__smallframebottom, .header__smallframetop {
+	height: 21vw;
+	min-height: 21vw;
+}
+
+.header__smallframetop {
+	padding-top: 3vw;
+}
+}
+/*----------КОНЕЦ ИЗМЕНЕНИЕ ПАРАМЕТРОВ СТРАНИЦЫ И ЗАГОЛОВКА ПРИ ЭКРАНЕ ДО 768px-------------*/
+
+@media (max-width: 767px) {
+.title  {
+font-size: calc(100px + (20 + 20 * 0.7) * ((100vw - 360px) / 1200));
+}
+}
+
+.greeting {
+	width: 82%;
+	color:  white;
+	font-family: "Andantinoscript";
+	font-size: 36px;
+	text-align: center;
+}
+
+h1 {
+	font-family: "Andantinoscript";
+	font-size: calc(50px + 30 * (100vw / 1200));
+	text-align: center;
+	margin-top: 60px;
+	Color: white;
+}
+
+
+
+.textcontainer {
+	background-color: #3E563E;
+	width: 100%;
+		padding-bottom: 3vh;
+}
+
+.text {
+	color: white;
+	font-family: "Andantinoscript";
+	font-size: calc(30px + 12 * (100vw / 1200));
+	text-align: justify;
+	width: 82.5%;
+	max-width: 990px;
+	margin: 0 auto;
+}
+
+/*--------------ИЗСЧЕЗАНИЕ SMALLFRAME НА БОЛЬШИХ РАЗРЕШЕНИЯХ ----------*/
+@media (min-width: 767px) {
+.header__smallframebottom, .header__smallframetop {
+	display: none;
+}
+}
+/*----------------КОНЕЦ ИЗСЧЕЗАНИЕ SMALLFRAME НА БОЛЬШИХ РАЗРЕШЕНИЯХ ----------*/
+
+@media (max-width: 767px) {
+.text {
+font-size: calc(30px + (12 + 12 * 0.7) * ((100vw - 360px) / 1200));
+}
+}
+
+@media (max-width: 767px) {
+h1  {
+font-size: calc(50px + (30 + 30 * 0.7) * ((100vw - 360px) / 1200));
+}
+}
+
