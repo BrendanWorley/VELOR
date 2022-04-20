@@ -134,11 +134,13 @@ max-width: 767px;
 .header__bottomstrip, .header__topstrip {
 	height: 21vw;
 	min-height: 21vw;
+
 }
 
 .header__smallframebottom, .header__smallframetop {
 	height: 21vw;
 	min-height: 21vw;
+        display: none;
 }
 
 .header__smallframetop {
@@ -311,7 +313,7 @@ left: 35px;
 }
 
 .title {
-font-family: "Copyist";
+font-family: "Andantinoscript";
 font-size: calc(130px + 40 * (100vw / 1200));
 color: white;
 width: 100%;
