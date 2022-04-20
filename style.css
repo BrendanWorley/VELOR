@@ -251,9 +251,9 @@ z-index: 10;
 }
 
 .header__smallframebottom {
-position: absolute;
+position: fixed;
 bottom: 0;
-width: 100%;
+width: 100vw;
 height: 8vw;
 text-align: center;
 background-color: #3E563E;
@@ -261,9 +261,9 @@ z-index: 11;
 }
 
 .header__smallframetop {
-position: absolute;
+position: fixed;
 top: 0;
-width: 100%;
+width: 100vw;
 height: 8vw;
 text-align: center;
 background-color: #3E563E;
