@@ -279,12 +279,14 @@ text-align: center;
 	width: 24vw;
 	height: 38vw;
 	z-index: 50;
+	object-fit: contain;
 }
 
 .hesgorgeous__video__smallframetop, .hesgorgeous__video__smallframebottom {
 	margin: 0 auto;
 	width: 100%;
 	text-align: center;
+	object-fit: contain;
 }
 
 .hesgorgeous__video__smallframetopimg, .hesgorgeous__video__smallframebottomimg {
