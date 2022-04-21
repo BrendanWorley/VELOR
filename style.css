@@ -297,13 +297,14 @@ max-width: 24vw;
 	height: 23vw;
 	margin: 0 auto;
 	text-align: center;
-	border: 3px white solid;
-	border-radius: `5%;
+	
 }
 
 .hesgorgeous__video__clip_mp4 {
 	height: 23vw;
 	width: 15vw;
+	border: 3px white solid;
+	border-radius: `5%;
 }
 
 
