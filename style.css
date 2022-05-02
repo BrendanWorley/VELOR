@@ -510,7 +510,7 @@ width: 100%;
 
 .miles {
 position: fixed;
-bottom: 0;
+bottom: 20vh;
 left: 20vw;
 z-index: 62;
 opacity: 0.5;
