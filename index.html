@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<title>VELOR</title>
+		<!----<bgsound src="miles.mp3" loop="4">----->
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<!--------СОЗДАЕМ ВЫПАДАЮЩЕЕ МЕНЮ------------------------>
+						<div class="dropoutmenu">
+							<div class="dropoutmenu__container__twinarrows">
+								<img class="dropoutmenu__container__twinarrows_png" src="twinarrows.png" style="filter: brightness(0) invert(1);">
+							</div>
+							<nav class="dropoutmenu__container">
+								<!---<div class="dropoutmenu__caption">
+									<p>Меню</p>
+								</div>---->
+								<ul class="dropoutmenu__list">
+									<li>
+										<a class="dropoutmenu__item music" id="turnon" href="#">Включить звук</audio></a>
+									</li>
+									<li>
+										<a data-goto=".frontportrait" class="dropoutmenu__item" href="#">Начало</a>
+									</li>
+									<li>
+										<a data-goto=".inception__header" class="dropoutmenu__item" href="#">Появление</a>
+									</li>
+									<li>
+										<a data-goto=".afterall_link" class="dropoutmenu__item" href="#">Но откуда же он все-таки взялся?</a>
+									</li>
+									<li>
+										<a data-goto=".hesgorgeous_link" class="dropoutmenu__item" href="#">Он красив, Он ослепительно красив!</a>
+									</li>
+									<li>
+										<a data-goto=".routine__header" class="dropoutmenu__item" href="#">Барсук в повседневной жизни</a>
+									</li>
+									<li>
+										<a data-goto=".territory_link" class="dropoutmenu__item" href="#">Территория и самки</a>
+									</li>
+									<li>
+										<a data-goto=".communication_link" class="dropoutmenu__item" href="#">Коммуникация с людьми</a>
+									</li>
+									<li>
+										<a data-goto=".credits_link" class="dropoutmenu__item" href="#">Благодарности</a>
+									</li>
+								</ul>
+							</nav>
+							
+						</div>
+						<!--------конец создания выпадающего меню---------------->
+				<div class="header__container">
+					<div class="header__topcorner topcorner">
+						<div class="header__1corner corner">
+							<img class="header__1cornerimg" src="corner1.png" alt="1corner" style="filter: brightness(0) invert(1)">
+						</div>
+						<div class="header__2corner corner">
+							<img class="header__2cornerimg" src="corner2.png" alt="2corner" style="filter: brightness(0) invert(1)">
+						</div>
+					</div>
+					<div class="header__burgericon">
+						<img class="header__burgericon_jpg" src="burger.png" style="filter: brightness(0) invert(1)">
+					</div>
+					<div class="header__bottomcorner bottomcorner">
+						<div class="header__4corner corner">
+							<img class="header__4cornerimg" src="corner4.png" alt="4corner" style="filter: brightness(0) invert(1)">
+						</div>
+						<div class="header__3corner corner">
+							<img class="header__3cornerimg" src="corner3.png" alt="3corner" style="filter: brightness(0) invert(1)">
+						</div>
+					</div>
+					<div class="header__topstrip">
+						<div class="header__topstripleft"></div>
+						<div class="header__topstripright"></div>
+					</div>
+					<div class="header__bottomstrip"></div>
+					<div class="header__smallframebottom">
+							<img class="header__smallframebottomimg" src="smallframecut.png" style="filter: brightness(0) invert(1)">
+							<!--------СОЗДАЕМ ВЫПАДАЮЩЕЕ МЕНЮ------------------------
+							<div class="dropoutmenu">
+								<nav class="dropoutmenu__container">
+									<div class="dropoutmenu__caption">
+										<p>Меню</p>
+									</div>
+									<ul class="dropoutmenu__list">
+										<li>
+											<a data-goto=".frontportrait" class="dropoutmenu__item__small" href="#">Начало</a>
+										</li>
+										<li>
+											<a data-goto=".inception__header" class="dropoutmenu__item__small" href="#">Появление</a>
+										</li>
+										<li>
+											<a data-goto=".afterall_link" class="dropoutmenu__item__small" href="#">Но откуда же он все-таки взялся?</a>
+										</li>
+										<li>
+											<a data-goto=".hesgorgeous_link" class="dropoutmenu__item__small" href="#">Он красив, Он ослепительно красив!</a>
+										</li>
+										<li>
+											<a data-goto=".routine__header" class="dropoutmenu__item__small" href="#">Барсук в повседневной жизни</a>
+										</li>
+										<li>
+											<a data-goto=".territory_link" class="dropoutmenu__item__small" href="#">Территория и самки</a>
+										</li>
+										<li>
+											<a data-goto=".communication_link" class="dropoutmenu__item__small" href="#">Коммуникация с людьми</a>
+										</li>
+										<li>
+											<a data-goto=".credits_link" class="dropoutmenu__item__small" href="#">Благодарности</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+							------конец создания выпадающего меню---------------->
+					</div>
+					<div class="header__smallframetop">
+							<img class="header__smallframetopimg" src="smallframecuttop.png" style="filter: brightness(0) invert(1)">
+					</div>
+				</div>
+			</header>
+			<div class="frontportrait">
+				<div class="frontportrait__frame">
+					<img class="frontportrait__frame_png" src="frame.png" style="filter: brightness(0) invert(1)">
+				</div>
+				<div class="frontportrait__photo">
+					<img class="frontportrait__photo_jpg" src="velurfront.jpg">
+				</div>
+			</div>
+			<div class="title">
+				<p>Велюр</p>
+			</div>
+			<div class="greeting">
+				<p>Велюр, он же "Барсук"<br>- это особенный кот.<br>Здесь мы расскажем почему он такой особенный.</p>
+			</div>
+			<div class="inception textcontainer">
+				<h1 class="inception__header">Появление</h1>
+				<div class="inception__text text">
+					<p>Появился он достаточно давно. Уже сложно вспомнить, наверное уже прошло не менее четырех, а может быть и пяти лет с момента как мы наслаждаемся его присутствием. А было это так. Одним днем наша Бабушка вышла на местной остановке и заметила прямо около остановки молодого и привлекательного кота весьма приятной внешности. Он просто сидел, никуда не спешил и был необычно спокоен. Он не выглядел голодным или уставшим, как будто бы он только что вышел из своего дома проводить родственника до этой самой остановки.Как бы то ни было, Бабушка не забрала Барсука с собой в тот день, по ее словам, весь его вид говорил о том, что с ним было все в порядке и в помощи он явно не нуждался. Позже, однако, в этот же день, Бабушку начали мучить очевидные мысли о том, что это было ненормально, что такой очаровательный кот был явно в неподходящем для него месте, но главное, она испугалась что кто-то другой, а не она, заберет Его к себе, и у кого-то другого жилище будет украшать это великолепное животное. Бабушку терзали эти страшные мысли всю предстоящую ночь, и следующим утром, очень рано, она поспешила на остановку. Барсука там не было.... Но Он был за остановкой! он вышел оттуда такой же красивый и спокойный и вел себя так как буд-то бы говорил: "ну что? пора идти к вам домой, заигрались мы здесь". И они пошли вдвоем домой.</p>
+				</div>
+			</div>
+			<div class="afterall textcontainer">
+				<h1 class="afterall_link">Но откуда же<br>он все-таки<br>взялся?</h1>
+				<div class="afterall__text text">
+					<p>Все понимали, что Велюр как-то очутился на той остановке, но никто не мог даже придумать откуда этот небесной красоты Кот появился изначально, и самое главное, почему он был так спокоен? Как будто бы знал что его сразу заберут, а вернее пригласят к себе домой на постоянное проживание. Был слелан один единственный вывод - Велюр прилетел на метеорите прямо на ту самую автобусную останоаку. Никто против этого не возражал, да и других вариантов просто не было.</p>
+				</div>
+			</div>
+			<div class="hesgorgeous textcontainer" id="hesgorgeous">
+				<h1 class="hesgorgeous_link">Он красив,<br>Он ослепительно красив.</h1>
+				<div class="hesgorgeous__text text">
+					<p>Барсук обладает необыкновенно красивым и мягким телом. Любой кто его видит, неважно кто, сразу хочет до него дотронуться. Отсюда его второе имя - Велюр. Его форма идеальна. При этом, похоже, Велюр знает об этом и использует это свое преимущество постоянно. Он пользуется большим успехом и уважением у всех: у женщин и у мужчин, у кошек и у котов, у собак. Никто не может устоять перед огромным соблазном потрогать его. Многие ему просто завидуют, многие сильно завидуют, так сильно, что это доставляет Велюру много проблем. Но похоже он мало обращает на это внимание.</p>
+				</div>
+			</div>
+			<div class="hesgorgeous__video">
+				<div class="hesgorgeous__video__smallframetop">
+					<img class="hesgorgeous__video__smallframetopimg" src="smallframecuttop.png" style="filter: brightness(0) invert(1)">
+				</div>
+				<div class="hesgorgeous__video__clip">
+					<video class="hesgorgeous__video__clip_mp4" autoplay muted controls> <source src="velurvsbulkis.mp4" type="video/mp4"></video>
+				</div>
+				<div class="hesgorgeous__video__smallframebottom">
+					<img class="hesgorgeous__video__smallframebottomimg" src="smallframecut.png" style="filter: brightness(0) invert(1)">
+				</div>
+			</div>
+			<div class="routine textcontainer">
+				<h1 class="routine__header">Барсук<br>в повседневной жизни.</h1>
+				<div class="routine__text text">
+					<p>Естественно, будучи особенным, Барсук установил определеный набор правил, которым все должны удовлетворять, чтобы он согласился проживать в их доме. Питается он отборной кашей, в которую Дед обязательно добавляет вкусную рыбку. Принимает он пищу два раза в день, утром и вечером, но непротив съесть и чью-нибудь чужую порцию, если на то представится такая возможность. Если он особенно голоден, то он обязательно напомнит, что ему пора есть, но сделает это так, чтобы не терять своего достоинства, это ни в коем случае не будет выглядеть как попрошайничество, а скорее ваша оплошность, что вы вовремя не озаботились сервировать Барсуку пищу. Опочивает Барсук либо на специальном кресле, либо на диване, при этом он обязательно залезет на того, кто будет также спать на диване, рядом он не будет ни в коем случае.</p>
+				</div>
+			</div>
+			<div class="territory textcontainer">
+				<h1 class="territory_link">Территория<br>и самки.</h1>
+				<div class="territory__text text">
+					<p>Барсук - настоящий собственник. Как и положено уважающему себя Дону, он имеет свою определенную территорию. Естественно все, абсолютно все самки, находящиеся в пределах данной территории безоговорочно принадлежат ему и только ему. Тем не менее много самок приходят извне, чтобы иметь шанс познакомиться с этим неземной красоты самцом. Как правило, если он не сильно занят, он не отказывает вопрошающим, он такой. Безусловно владение землей и женщинами не может быть бесплатным, слишком много соперников и Велюр постоянно должен доказывать свои права на эти привелегии. Очень часто он может запаздывать на сутки-двое, а потом появиться с тяжелыми ранами. К сожалению - это обычное дело. Миссией лечить и восстанавливать его он наделил Деда. Поэтому у Деда уже давно сложился хирургический инструментарий и нужная практика для заживления разодранных ушей и прокушенных лап. Барсук всегда знает, что когда он приползет жутко хромая, его ждет квалифицированная медицинская помощь и вкусная кашка с рыбкой.</p>
+				</div>
+			</div>
+			<div class="communication textcontainer">
+				<h1 class="communication_link">Коммуникация<br>с людьми.</h1>
+				<div class="communication text">
+					<p>Барсук понимает, что ни один человек, в особенности женщина, находящаяся в пределах видимости, не устоит против того, чтобы подойти и дотронуться до его совершенного велюрового тела. Он это знает, поэтому он будет лежать (или в крайнем случае чинно сидеть) пока слабые люди или дети будут восторженно щупать его. Он мудро принимает это и уделит им свое несомненно драгоценное время, но не более положенной нормы. Если же вы позволяете себе лишнего и предъявляете претензии на большее, то Барсук может просто пригнорировать вас и уйти, а особо нахальных он просто искусает.</p>
+				</div>
+			</div>
+			<div class="credits textcontainer">
+				<h1 class="credits_link">Благодарности.</h1>
+				<div class="credits text">
+					<p>Мы думаем, что все должны быть очень благодарны Вселенной, за то, что в тот день она выделила метеорит, доставивший Велюра к нам. Мы безмерно рады, что он с нами и очень дорожим его снисходительностью и вниманием.</p>
+				</div>
+			</div>
+			<!------------------ЗАКЛЮЧИТЕЛЬНОЕ ФОТО--------------->
+			<div class="closingportrait">
+				<div class="closingportrait__smallframetop">
+					<img class="closingportrait__smallframetop__img" src="smallframecuttop.png" style="filter: brightness(0) invert(1)">
+				</div>
+				<div class="closingportrait__photo">
+					<img class="closingportrait__img" src="velurbottom.jpg">
+				</div>
+				<div class="closingportrait__smallframebottom">
+					<img class="closingportrait__smallframebottom__img" src="smallframecut.png" style="filter: brightness(0) invert(1)">
+				</div>
+			</div>
+			<div class="fish">
+					<img class="fish__png" src="fish.png" style="filter: brightness(0) invert(1);">
+			</div>
+			<div class="finalizingdiv">
+				<div class="finalizingdiv__year"></div>
+			</div>
+		</div>
+		<audio class="miles" controls autoplay><source src="miles.mp3" type="audio/mp3">
+		<!---------<audio id="myAudio" class="miles"  loop controls><source src="miles.mp3"></audio>----->
+		<script src="script.js"></script>
+	</body>
+</html>
