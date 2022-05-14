@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Andantinoscript';
+  src: url('Andantinoscript.svg#Andantinoscript') format('svg'),
+       url('Andantinoscript.ttf') format('truetype'),
+       url('Andantinoscript.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'andantino-script_[allfont.ru]';
+  src: url('andantino-script_[allfont.ru].eot');
+  src: url('andantino-script_[allfont.ru].eot?#iefix') format('embedded-opentype'),
+       url('andantino-script_[allfont.ru].woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

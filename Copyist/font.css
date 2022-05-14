@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Copyist';
+  src: url('Copyist.svg#Copyist') format('svg'),
+       url('Copyist.ttf') format('truetype'),
+       url('Copyist.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'copyist-thin1';
+  src: url('copyist-thin1.eot');
+  src: url('copyist-thin1.eot?#iefix') format('embedded-opentype'),
+       url('copyist-thin1.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
