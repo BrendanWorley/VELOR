@@ -1,4 +1,19 @@
 "use strict"
+/*----------АЛЬТЕРНАТИВНЫЙ ЗАПУСК ЗВКА ПО СКРОЛЛУ---------*/
+// const scrollClick = document.querySelector('.inception__text');
+window.addEventListener('scroll', onscrollPlay);
+
+function onscrollPlay() {
+	mediaSource.classList.toggle('playing');
+	if (mediaSource.classList.contains('playing')) {
+		soundClick.textContent = 'Выключить звук';
+		mediaSource.play();
+		window.removeEventListener('scroll', onscrollPlay);
+	}
+
+}
+/*-------------------------------------------------------*/
+
 /* -------------ЗДЕСЬ ВСТАВЛЯЕМ ФУНКЦИЮ ЗАПУСКА ЗВУКА--------------*/
 const soundClick = document.getElementById('turnon');
 const mediaSource = document.querySelector('.miles');
@@ -7,14 +22,15 @@ const mediaSource = document.querySelector('.miles');
 soundClick.addEventListener("click", soundOnOff)
 
 function soundOnOff() {
-mediaSource.classList.toggle('playing');
-if (mediaSource.classList.contains('playing')) {
-	soundClick.textContent = 'Выключить звук';
-	mediaSource.play();}
-else {
-	soundClick.textContent = 'Включить звук';
-	mediaSource.pause();
-}
+	mediaSource.classList.toggle('playing');
+	if (mediaSource.classList.contains('playing')) {
+		soundClick.textContent = 'Выключить звук';
+		mediaSource.play();
+	}
+	else {
+		soundClick.textContent = 'Включить звук';
+		mediaSource.pause();
+	}
 }
 /*---------------------------------------------------------------*/
 
@@ -35,7 +51,7 @@ const openMenu = document.querySelector('.header__burgericon');
 const dropoutmenustatus = document.querySelector('.dropoutmenu');
 const videooverlay = document.querySelector('.hesgorgeous__video__clip') /*testing*/
 if (openMenu) {
-	openMenu.addEventListener("click", function(e) {
+	openMenu.addEventListener("click", function (e) {
 		dropoutmenustatus.classList.toggle('openstatus'); /*openMenu.classList.toggle('openstatus');*/
 		document.body.classList.toggle('block');
 		videooverlay.classList.add('musthide');/*testing*/
@@ -55,15 +71,14 @@ if (menuLinks.length > 0) {
 
 	function onMenuLinkClick(e) {
 		const menuLink = e.target;
-		if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto))
-		 {
+		if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
 			const gotoBlock = document.querySelector(menuLink.dataset.goto);
 			const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('.header__topstrip').offsetHeight;
 
 			if (dropoutmenustatus.classList.contains('openstatus')) {
-			dropoutmenustatus.classList.remove('openstatus'); 
-			document.body.classList.remove('block');
-			videooverlay.classList.remove('musthide'); /*testing*/
+				dropoutmenustatus.classList.remove('openstatus');
+				document.body.classList.remove('block');
+				videooverlay.classList.remove('musthide'); /*testing*/
 			}
 			window.scrollTo({
 				top: gotoBlockValue,
@@ -79,12 +94,12 @@ if (menuLinks.length > 0) {
 
 /* ----------------ОТКРЫВАЕМ DROPOUTMENU SMALL------------*/
 
-	const smallframebottomstatus = document.querySelector('.header__smallframebottom');
-		if (smallframebottomstatus) {
-			smallframebottomstatus.addEventListener("click", function(e) {
-			dropoutmenustatus.classList.toggle('openstatus');/*smallframebottomstatus.classList.toggle('active');*/
-			document.body.classList.toggle('block');
-			videooverlay.classList.add('musthide');/*testing*/
+const smallframebottomstatus = document.querySelector('.header__smallframebottom');
+if (smallframebottomstatus) {
+	smallframebottomstatus.addEventListener("click", function (e) {
+		dropoutmenustatus.classList.toggle('openstatus');/*smallframebottomstatus.classList.toggle('active');*/
+		document.body.classList.toggle('block');
+		videooverlay.classList.add('musthide');/*testing*/
 	});
 }
 
