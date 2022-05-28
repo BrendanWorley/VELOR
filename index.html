@@ -15,7 +15,11 @@
 			<!--------СОЗДАЕМ ВЫПАДАЮЩЕЕ МЕНЮ------------------------>
 			<div class="dropoutmenu">
 				<div class="dropoutmenu__container__twinarrows">
+					<img class="dropoutmenu__container__twinarrows_up" src="twinarrowsup.png"
+						style="filter: brightness(0) invert(1);">
 					<img class="dropoutmenu__container__twinarrows_png" src="twinarrows.png"
+						style="filter: brightness(0) invert(1);">
+					<img class="dropoutmenu__container__twinarrows_down" src="twinarrowsdown.png"
 						style="filter: brightness(0) invert(1);">
 				</div>
 				<nav class="dropoutmenu__container">
@@ -23,7 +27,7 @@
 									<p>Меню</p>
 								</div>---->
 					<ul class="dropoutmenu__list">
-						<li>
+						<li id="firstItem">
 							<a class="dropoutmenu__item music" id="turnon" href="#">Включить звук</audio></a>
 						</li>
 						<li>
@@ -49,7 +53,7 @@
 						<li>
 							<a data-goto=".communication_link" class="dropoutmenu__item" href="#">Коммуникация с людьми</a>
 						</li>
-						<li>
+						<li id="credits">
 							<a data-goto=".credits_link" class="dropoutmenu__item" href="#">Благодарности</a>
 						</li>
 					</ul>

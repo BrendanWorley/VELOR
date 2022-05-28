@@ -52,9 +52,12 @@ const dropoutmenustatus = document.querySelector('.dropoutmenu');
 const videooverlay = document.querySelector('.hesgorgeous__video__clip') /*testing*/
 if (openMenu) {
 	openMenu.addEventListener("click", function (e) {
+		showArrows.style.visibility = 'hidden';
+		showArrows1.style.visibility = 'hidden';
 		dropoutmenustatus.classList.toggle('openstatus'); /*openMenu.classList.toggle('openstatus');*/
 		document.body.classList.toggle('block');
 		videooverlay.classList.add('musthide');/*testing*/
+		scrollCheck();
 	});
 
 }
@@ -79,6 +82,7 @@ if (menuLinks.length > 0) {
 				dropoutmenustatus.classList.remove('openstatus');
 				document.body.classList.remove('block');
 				videooverlay.classList.remove('musthide'); /*testing*/
+				showArrows.style.visibility = 'hidden';
 			}
 			window.scrollTo({
 				top: gotoBlockValue,
@@ -96,12 +100,59 @@ if (menuLinks.length > 0) {
 
 const smallframebottomstatus = document.querySelector('.header__smallframebottom');
 if (smallframebottomstatus) {
-	smallframebottomstatus.addEventListener("click", function (e) {
+	smallframebottomstatus.addEventListener("click", function () {
+		showArrows.style.visibility = 'hidden';
+		showArrows1.style.visibility = 'hidden';
+		scrollCheck();
 		dropoutmenustatus.classList.toggle('openstatus');/*smallframebottomstatus.classList.toggle('active');*/
 		document.body.classList.toggle('block');
 		videooverlay.classList.add('musthide');/*testing*/
-	});
+
+	})
 }
+
+/*--------------ДЕЛАЕМ АЛЬЕРНАТИВНЫЙ SCROLLBAR -----------------*/
+const scrollingList = document.querySelector('.dropoutmenu__list');
+const firstItem = document.getElementById('firstItem');
+const lastItem = document.getElementById('credits');
+const showArrows = document.querySelector('.dropoutmenu__container__twinarrows_up');
+const showArrows1 = document.querySelector('.dropoutmenu__container__twinarrows_down');
+
+scrollingList.addEventListener("scroll", scrollCheck);
+
+function scrollCheck() {
+	showArrows.style.visibility = 'hidden';
+	showArrows1.style.visibility = 'hidden';
+	if (scrollingList.scrollTop >= firstItem.clientHeight / 2) {
+		showArrows.style.visibility = 'visible';
+	}
+	if ((scrollingList.scrollHeight - scrollingList.clientHeight - scrollingList.scrollTop) >= (lastItem.clientHeight) * 0.3) {
+		showArrows1.style.visibility = 'visible';
+	}
+
+
+}
+/*const dropoutmenuList = document.querySelector('.dropoutmenu__list');
+const dropoutmenuOuter = document.querySelector('.dropoutmenu');
+const dropoutmenuRect = dropoutmenuOuter.getBoundingClientRect().top;
+console.log(dropoutmenuRect);
+const firstItem = document.querySelector('.music');
+const firstItemRect = firstItem.getBoundingClientRect().top;
+console.log(firstItemRect);
+const showArrows = document.querySelector('.dropoutmenu__container__twinarrows_up');
+const showArrows1 = document.querySelector('.dropoutmenu__container__twinarrows_down');
+
+function scrollCheck() {
+	if (dropoutmenuList.scrollHeight > dropoutmenuOuter.scrollHeight) {
+		showArrows.style.visibility = 'visible';
+		showArrows1.style.visibility = 'visible';
+	}
+
+}*/
+/*-------------------------------------------------------------*/
+
+
+
 
 /*------------------------ДЕЛАЕМ ПРОКРУТКУ НА РАЗРЕШЕНИЯХ МЕНЕЕ 768 ------------*/
 
