@@ -886,7 +886,17 @@ display: block;
 
 	}
 
+	.dropoutmenu__container__twinarrows {
+		position: relative;
+		top: 0;
+		left: 0;
+		min-width: 10%;
+		padding: 3%;
+	}
+
+
 }
+
 
 /*----------КОНЕЦ ИЗМЕНЕНИЕ ПАРАМЕТРОВ СТРАНИЦЫ И ЗАГОЛОВКА ПРИ ЭКРАНЕ ДО 768px-------------*/
 
