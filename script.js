@@ -1,6 +1,7 @@
 "use strict"
-/*----------АЛЬТЕРНАТИВНЫЙ ЗАПУСК ЗВКА ПО СКРОЛЛУ---------*/
-// const scrollClick = document.querySelector('.inception__text');
+
+/*----------АЛЬТЕРНАТИВНЫЙ ЗАПУСК ЗВУКА ПО СКРОЛЛУ---------*/
+
 window.addEventListener('scroll', onscrollPlay);
 
 function onscrollPlay() {
@@ -9,6 +10,7 @@ function onscrollPlay() {
 		soundClick.textContent = 'Выключить звук';
 		mediaSource.play();
 		window.removeEventListener('scroll', onscrollPlay);
+
 	}
 
 }
@@ -51,7 +53,7 @@ const openMenu = document.querySelector('.header__burgericon');
 const dropoutmenustatus = document.querySelector('.dropoutmenu');
 const videooverlay = document.querySelector('.hesgorgeous__video__clip') /*testing*/
 if (openMenu) {
-	openMenu.addEventListener("click", function (e) {
+	openMenu.addEventListener("click", function () {
 		showArrows.style.visibility = 'hidden';
 		showArrows1.style.visibility = 'hidden';
 		dropoutmenustatus.classList.toggle('openstatus'); /*openMenu.classList.toggle('openstatus');*/
@@ -83,6 +85,7 @@ if (menuLinks.length > 0) {
 				document.body.classList.remove('block');
 				videooverlay.classList.remove('musthide'); /*testing*/
 				showArrows.style.visibility = 'hidden';
+
 			}
 			window.scrollTo({
 				top: gotoBlockValue,
@@ -110,6 +113,9 @@ if (smallframebottomstatus) {
 
 	})
 }
+
+
+/* - ВРЕМЕННО ОТКЛЮЧАЮ ЧТОБЫ ПРОВЕРИТЬ РАБОТАЕТ ЛИ ОРНАМЕНТ ПРИ ОТКРЫТИИ МЕНЮ НА МАЛОМ РАЗРЕШЕНИИ-----*/
 
 /*--------------ДЕЛАЕМ АЛЬЕРНАТИВНЫЙ SCROLLBAR -----------------*/
 const scrollingList = document.querySelector('.dropoutmenu__list');
