@@ -1114,7 +1114,7 @@ h1 {
 	color: white;
 	font-family: "Andantinoscript";
 	font-size: calc(30px + 12 * (100vw / 1200));
-	text-align: justify;
+	text-align: center;
 	width: 82.5%;
 	max-width: 990px;
 	margin: 0 auto;
