@@ -13,7 +13,7 @@ function launchPage() {
 /*--------------------------------------------------------------*/
 
 /*----------АЛЬТЕРНАТИВНЫЙ ЗАПУСК ЗВУКА ПО СКРОЛЛУ---------*/
-
+window.addEventListener('scroll', onscrollPlay);
 window.addEventListener('wheel', onscrollPlay);
 
 function onscrollPlay() {
