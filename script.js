@@ -1,17 +1,31 @@
 "use strict"
 
+/* ------------------- УПРАВЛЯЕМ LAUNCHER-ОМ --------------------*/
+const launcher = document.getElementById('launcher');
+const launchButton = document.querySelector('.launchButton');
+console.log(launchButton);
+
+launchButton.addEventListener("click", launchPage);
+
+function launchPage() {
+	launcher.style.visibility = "hidden";
+}
+/*--------------------------------------------------------------*/
+
 /*----------АЛЬТЕРНАТИВНЫЙ ЗАПУСК ЗВУКА ПО СКРОЛЛУ---------*/
 
-window.addEventListener('scroll', onscrollPlay);
+window.addEventListener('wheel', onscrollPlay);
 
 function onscrollPlay() {
-	mediaSource.classList.toggle('playing');
-	if (mediaSource.classList.contains('playing')) {
-		soundClick.textContent = 'Выключить звук';
-		mediaSource.play();
-		window.removeEventListener('scroll', onscrollPlay);
 
+	mediaSource.classList.toggle('playing');
+	if (mediaSource.classList.contains('playing') && !mediaSource.muted) {
+		mediaSource.play();
+		soundClick.textContent = 'Выключить звук';
 	}
+	/*window.removeEventListener('scroll', onscrollPlay);*/
+
+
 
 }
 /*-------------------------------------------------------*/
@@ -28,10 +42,13 @@ function soundOnOff() {
 	if (mediaSource.classList.contains('playing')) {
 		soundClick.textContent = 'Выключить звук';
 		mediaSource.play();
+		mediaSource.muted = false;
 	}
 	else {
 		soundClick.textContent = 'Включить звук';
-		mediaSource.pause();
+		/*mediaSource.pause();*/
+		mediaSource.muted = true;
+		console.log(mediaSource.muted);
 	}
 }
 /*---------------------------------------------------------------*/
